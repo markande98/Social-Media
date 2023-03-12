@@ -62,7 +62,6 @@ const Form = () => {
       picturePath: values.picture.name,
     };
 
-    console.log(formData);
     let options = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
