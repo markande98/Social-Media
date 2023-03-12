@@ -67,7 +67,6 @@ const PostsWidget = ({ userId, isProfile = false }) => {
           />
         )
       )}
-      <p>Hello</p>
     </>
   );
 };
