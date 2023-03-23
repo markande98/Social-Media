@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import Navbar from "scenes/navbar";
 import AdvertWidget from "scenes/widgets/AdverWidget";
 import FriendListWidget from "scenes/widgets/FriendListWidget";
+import HobbiesWidget from "scenes/widgets/HobbiesWidget";
 import MyPostWidget from "scenes/widgets/MyPostWidget";
 import PostsWidget from "scenes/widgets/PostsWidget";
 import UserWidget from "scenes/widgets/UserWidget";
@@ -21,7 +22,8 @@ const HomePage = () => {
         justifyContent="space-between"
       >
         <Box flexBasis={isNonMobileScreens ? "26%" : undefined}>
-          <UserWidget userId={_id} picturePath={picturePath} />
+          <UserWidget userId={_id} picturePath={picturePath}/>
+          <HobbiesWidget />
         </Box>
         <Box
           flexBasis={isNonMobileScreens ? "42%" : undefined}
