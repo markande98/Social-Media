@@ -9,7 +9,7 @@ const HobbiesWidget = () => {
     <WidgetWrapper mt="2rem">
       <Typography color={main} mb="1rem">What I Like!</Typography>
       <Typography color={mediumMain} mb="1rem">
-        A Passionate software engineer, who loves with innovation 
+        A passionate software engineer, who loves with innovation 
         and creativity, expolored every tech field. 
       </Typography>
       <Typography color={mediumMain}>

@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setPosts } from "state/index";
@@ -39,7 +40,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
   }, []);
 
   return (
-    <>
+    <Box overflow="scroll" maxHeight="40rem">
       {posts.map(
         ({
           _id,
@@ -67,7 +68,7 @@ const PostsWidget = ({ userId, isProfile = false }) => {
           />
         )
       )}
-    </>
+    </Box>
   );
 };
 
